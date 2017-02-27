@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	
+	<bean id="userDaoQueries" class="java.util.Properties">
+		<constructor-arg index="0">
+			<props>
+				<prop key="user.getAllUser">
+					SELECT * FROM USER
+				</prop>
+				
+				<prop key="user.getUser">
+					SELECT * FROM USER
+					WHERE id = :id
+				</prop>
+				
+				<prop key="user.createUser">
+					INSERT INTO user (name, birthday) VALUES(:name, :birthday)
+				</prop>
+				
+				<prop key="user.updateUser">
+					UPDATE user 
+					SET name = :name, birthday = :birthday
+					WHERE id = :id
+				</prop>
+				
+				<prop key="user.removeUser">
+					DELETE FROM USER WHERE id = :id
+				</prop>
+			</props>
+		</constructor-arg>
+	</bean>
+	
+</beans>
