@@ -41,7 +41,7 @@ public interface UserService {
 	public UserBean updateUser(UserBean user);	
 	
 	/**
-	 * <p>Modifiy an user</p>
+	 * <p>Remove an user</p>
 	 * @param id
 	 */
 	public void removeUser(int id);	
