@@ -8,10 +8,10 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>Exercise-CoreData</module>
-		<module>Exercise-CoreImplement</module>
-		<module>Exercise-CoreInterface</module>
-		<module>Exercise-PortalWeb</module>
+		<module>exercise-coredata</module>
+		<module>exercise-coreimplement</module>
+		<module>exercise-coreinterface</module>
+		<module>exercise-portalweb</module>
 	</modules>
 
 	<name>Exercise</name>
